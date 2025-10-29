@@ -6,13 +6,13 @@ import os
 
 def pantalla_carga():
     for i in range(10):
-        if os.name == 'nt':
-            _ = os.system('cls')
+        os.system('cls')
         print('     Procesando mensaje...')
         print('         [' + '#'*i + ']')
         time.sleep(0.5)
 
 def main():
+    os.system('cls')
     responses = ['¡Qué interesante!', 'Cuentame más...', 'No sé que decirte... 😔', 'Alejate de mi porfavor', '¿Eres el conocido "Big Six"?']
     print('Bienvenido, empieza a hablar para que el bot responda.')
     input('   > ')

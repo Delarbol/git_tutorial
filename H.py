@@ -1,3 +1,4 @@
-print("Hola")
-print("Hora Actual: 5:50 p. m.")
-
+def par(x):
+    if x % 2 == 0:
+        return "Es Par"
+    return "Es Impar"
